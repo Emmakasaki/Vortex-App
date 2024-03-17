@@ -1,0 +1,16 @@
+{
+  "name": "vortex-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Emmaki",
+  "license": "MIT",
+  "dependencies": {
+    "@electron/remote": "^2.1.2",
+    "electron": "^29.1.4",
+    "jquery": "^3.7.1"
+  }
+}

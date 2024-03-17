@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="../css/login-style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <meta http-equiv="Content-Security-Policy", content="script-src 'self'">
+        <script src="../js/libraries/jquery-3.7.1.min.js"></script>
+        <script src="../js/scripts/login.js" defer></script>
+    </head>
+    <body>
+
+        <div class="title-bar">
+            <span>Vortex App</span>
+            <div class="button-group">
+                <button id="minimize"><i class="fa-solid fa-window-minimize"></i></button>
+                <button id="maximize"><i class="fa-solid fa-window-maximize"></i></button>
+                <button id="close"><i class="fa-solid fa-rectangle-xmark"></i></button>
+            </div>
+        </div>
+        <div class="content">
+            <div class="container" id="container" hidden="true">
+                <div class="form-container log-in">
+                    <form>
+                        <h1>Login</h1>
+                        <div class="username-input">
+                            <i class="fa-solid fa-user"></i><input type="text" placeholder="Username" id="user">
+                        </div>
+
+                        <div class="password-input">
+                            <i class="fa-solid fa-lock"></i><input type="password" placeholder="Password" id="pass">
+                        </div>
+
+                        <div class="remember-me">
+                            <input type="checkbox" name="rememberCheck" id="remCheck" value="false"><p>Remember Me</p>
+                        </div>
+
+                        <button type="button" id="signIn">Sign In</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
