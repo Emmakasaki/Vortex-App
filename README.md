@@ -26,6 +26,10 @@ Contributions are welcome! Please follow these steps:
 
 This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
 
+## Libraries
+
+This project uses [Electron](https://www.electronjs.org/), [jQuery](https://jquery.com/), [Font Awesome](https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css), and [Google fonts](https://fonts.google.com)
+
 ## Contact
 
 If you have any questions or suggestions, feel free to reach out to me on discord: emmakasaki
