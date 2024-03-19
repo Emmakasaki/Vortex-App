@@ -26,16 +26,20 @@ $(document).ready(function() {
         }
     });
 
-        // Event handlers for close, minimize, and maximize buttons
+    // Event handler for pressing enter key
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'Enter') {
+            $('#signIn').click();
+        }
+    });
+
+     // Event handlers for close, minimize, and maximize buttons
     $('#close').click(function() {
         closeCurrentWindow();
     });
-
-
     $('#minimize').click(function() {
         minimize();
     });
-
     $('#maximize').click(function() {
         if (isMaximized()) {
             unmaximize();

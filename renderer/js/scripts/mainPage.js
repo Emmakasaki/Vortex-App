@@ -2,9 +2,32 @@ const { getCurrentWindow, closeCurrentWindow, minimize, isMaximized, maximize, u
 let currentWindow = getCurrentWindow();
 console.log('mainPage.js loaded');
 
-$(document).ready(function() {
+// Remove transition effect
+
+
+$(document).ready(async function() {
     console.log('mainPage.js ready');
 
+    $('#gamesFolder').css('transition', '0s'); 
+    $('#gamesFolder').fadeIn(1500); // Fade in the games folder button
+    console.log($('#gamesFolder').css('transition'));
+
+
+
+    // Setting transition effect after the button has been faded in
+    await $('gamesFolder').ready(function() {
+        $('#gamesFolder').css('transition', '0.5s');
+        console.log($('#gamesFolder').css('transition'));
+    });
+    
+
+    
+
+
+    // Event for games folder button
+    $('#gamesFolder').click(function() {
+        send('open-games-page');
+    });
 
 
 
